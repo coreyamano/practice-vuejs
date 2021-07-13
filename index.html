@@ -16,6 +16,13 @@
 
       <p>{{ message2 }}</p>
       <input v-model="message2" />
+
+      <p>
+        <span v-if="seen"
+          >This is a paragraph that will be hidden and unhidden</span
+        >
+        <button v-on:click="showMore">Show More</button>
+      </p>
     </div>
 
     <!-- 
