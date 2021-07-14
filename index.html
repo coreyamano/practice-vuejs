@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Practice Vue.js</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js" defer></script>
   </head>
   <body>
@@ -23,8 +24,14 @@
         >
         <button v-on:click="showMore">Show More</button>
       </p>
-    </div>
+      <!-- <p>List of animals:</p>
+      <div v-for="animal in animals">{{ animal }}</div>
+      <input type="text" v-model="newAnimal" />
+      <button v-on:click="addAnimal">Add Animal</button>
+    </div> -->
 
+    <p><button v-on:click="loadTodos">Load Todos</button></p>
+    <div v-for="todo in todos">{{ todo }}</div>
     <!-- 
     <div id="app-6">
       <p>{{ message }}</p>
